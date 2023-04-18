@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5CED2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="55dp"
+        android:text="Tip Calculator"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/calculator"
+        android:layout_toRightOf="@id/txtWelcome"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:id="@+id/txtBill"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:layout_below="@id/txtWelcome"
+        android:text="Bill"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/txtBill"
+        android:layout_below="@id/txtWelcome"
+        android:hint="Enter your bill price"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/txtBill"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="15%"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/txtBill"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/txtPercentage"
+        android:max="30"
+        android:thumbTint="#991370"
+        android:progressTint="@color/thumbColor"/>
+
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/txtPercentage"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Tip"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/seekbar"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/txtTip"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/txtTip"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Total"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/txtTipAmount"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/black"
+        android:layout_toRightOf="@id/txtTotal"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtChandravir"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="By CHANDRAVIR SINGH"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
